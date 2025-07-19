@@ -31,7 +31,6 @@ export default defineConfig([
       'quotes': ['error', 'single'],
       'semi': ['error', 'always'],
       'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-      'no-console': 'warn',
       'max-len': ['error', { code: 80, ignoreUrls: true }],
       'linebreak-style': ['error', 'unix'],
       'keyword-spacing': ['error', { before: true, after: true }],
