@@ -1,4 +1,3 @@
-// test express server
 import request from 'supertest';
 import app from '.';
 

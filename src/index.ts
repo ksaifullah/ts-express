@@ -1,4 +1,3 @@
-// create an express server
 import express from 'express';
 
 const app = express();
@@ -9,7 +8,7 @@ app.get('/', (_, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`App is listening on port ${port}`);
 });
 
 export default app;

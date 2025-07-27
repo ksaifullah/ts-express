@@ -1,19 +1,9 @@
 services:
-  sh: &base
+  web:
     image: node:lts-alpine
     volumes:
       - .:/opt/code
     working_dir: /opt/code
-    command: sh
-
-  install:
-    <<: *base
-    command: npm install
-
-  lint:
-    <<: *base
-    command: npm run lint
-
-  test:
-    <<: *base
-    command: npm test
+    ports:
+      - '3000:3000'
+    command: npm run start:dev

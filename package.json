@@ -6,6 +6,8 @@
   "scripts": {
     "compile": "rm -rf dist && tsc -p tsconfig.app.json",
     "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet",
+    "start:dev": "tsc -w & node --watch dist/index.js",
+    "start:prod": "node dist/index.js",
     "test": "jest --forceExit --detectOpenHandles"
   },
   "author": "khalid@outlook.com.au",
